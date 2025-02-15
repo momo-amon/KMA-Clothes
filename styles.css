@@ -1,0 +1,365 @@
+/* تنسيقات أساسية */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* الهيدر */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header h3 {
+  color: white;
+  font-size: 24px;
+}
+
+/* تنسيق القائمة */
+.text-header ul {
+  display: flex; /* ترتيب العناصر بشكل أفقي */
+  gap: 20px; /* المسافة بين العناصر */
+}
+
+.text-header ul li {
+  font-size: 16px; /* حجم الخط */
+}
+
+.text-header ul li a {
+  text-decoration: none; /* إزالة التسطير من الرابط */
+  color: white; /* لون النص */
+  font-weight: 600; /* جعل النص ثقيل */
+  transition: color 0.3s; /* تأثير عند التغيير في اللون */
+}
+
+.text-header ul li a:hover {
+  color: #007bff; /* تغيير اللون عند التمرير على الرابط */
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons i {
+  margin-left: 20px;
+  color: white;
+  font-size: 20px;
+}
+
+.orders {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  margin-left: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+/* قسم الصفحة الرئيسية */
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    #6a11cb,
+    #2575fc
+  ); /* نفس تدرج الألوان في الهيدر */
+  color: white;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* قسم المنتجات */
+.products {
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.products h2 {
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* مسافة بين المنتجات */
+}
+
+.product-card {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px; /* يمكنك تعديل الارتفاع حسب الحاجة */
+  object-fit: contain; /* يضمن أن الصورة تظهر كاملة دون تقطيع */
+  border-radius: 8px;
+  margin-bottom: 15px; /* مسافة بين الصورة والنص */
+}
+
+.product-card h3 {
+  font-size: 18px;
+  color: #333;
+  margin-top: 15px;
+}
+
+.product-card p {
+  font-size: 16px;
+  color: #888;
+  margin-top: 5px;
+}
+
+.product-card .price {
+  font-size: 20px;
+  color: #2575fc;
+  margin-top: 15px;
+}
+
+.product-card button {
+  background-color: #2575fc;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #6a11cb;
+}
+
+/* تنسيقات أقسام أخرى */
+.description,
+.news {
+  padding: 20px;
+  background: #f7f7f7;
+  margin-bottom: 20px;
+}
+
+.description p,
+.news p {
+  color: #555;
+}
+
+.description h2,
+.news h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* تنسيقات الاتصال */
+.contact {
+  padding: 40px 20px;
+  background: #333;
+  color: white;
+}
+
+.contact h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  padding: 10px 20px;
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #6a11cb;
+}
+
+/* الفوتر */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* تنسيقات زر الطلبات العائم */
+.floating-cart-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 24px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.floating-cart-button:hover {
+  background-color: #6a11cb;
+  transform: translateY(-5px);
+}
+
+.floating-cart-button:active {
+  background-color: #444;
+  transform: translateY(2px);
+}
+
+.floating-cart-button i {
+  transition: transform 0.3s ease;
+}
+
+.floating-cart-button:hover i {
+  transform: rotate(360deg);
+}
+
+/* تنسيقات قسم عرض الطلبات */
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.cart-sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cart-items {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px; /* مسافة بين الصورة والنص */
+}
+
+.cart-item h4 {
+  font-size: 16px;
+  color: #333;
+  flex: 1;
+}
+
+.cart-item p {
+  color: #888;
+}
+
+.cart-item button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cart-item button:hover {
+  background-color: #cc0000;
+}
+
+.close-btn {
+  background-color: #007bff; /* لون الخلفية */
+  color: white; /* لون النص */
+  font-size: 16px; /* حجم الخط */
+  padding: 8px 15px; /* padding لتوسيع الزر */
+  border: none; /* إزالة الحدود */
+  border-radius: 5px; /* حواف مدورة */
+  cursor: pointer; /* تغيير المؤشر عند التمرير */
+  transition: background-color 0.3s ease; /* تأثير التغيير في اللون */
+}
+
+.close-btn:hover {
+  background-color: #0056b3; /* تغيير اللون عند التمرير */
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>On Trend</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="allMain.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="home">
+    <header>
+      <h3>On Trend</h3>
+      <div class="text-header">
+        <ul>
+          <ul>
+            <!-- رابط للصفحة الرئيسية -->
+            <li><a href="index.html">Home</a></li>
+            <!-- رابط لصفحة "عن الموقع" -->
+            <li><a href="about.html">About us</a></li>
+            <!-- رابط لصفحة "اتصل بنا" -->
+            <li><a href="contact us/contact.html">Contact</a></li>
+            <!-- رابط لصفحة تسجيل الدخول -->
+            <li><a href="log in/index.html">Login</a></li>
+          </ul>
+        </ul>
+      </div>
+      <div class="icons">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="orders">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <div class="price">0.00$</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- قسم الصفحة الرئيسية -->
+    <section id="home" class="hero">
+      <h1>BOSYOUR STYLESENSE</h1>
+      <p>اكتشف أحدث صيحات الموضة معنا!</p>
+    </section>
+
+    <!-- قسم المنتجات -->
+    <section id="shop" class="products">
+      <h2>منتجاتنا</h2>
+      <div class="products-grid">
+        <!-- سيتم إضافة المنتجات هنا باستخدام JavaScript -->
+      </div>
+    </section>
+
+    <!-- قسم الوصف -->
+    <section class="description">
+      <p>اكتشف تشكيلتنا من الملابس العصرية التي تجمع بين الأناقة والجودة.</p>
+    </section>
+    <!-- قسم الأخبار والعروض -->
+    <section class="news">
+      <h2>أحدث العروض والأخبار</h2>
+      <p>تابعنا للحصول على أحدث التحديثات والعروض.</p>
+    </section>
+
+    <!-- قسم الاتصال -->
+    <section id="contact" class="contact">
+      <h2>اتصل بنا</h2>
+      <form>
+        <input type="text" placeholder="اسمك" required />
+        <input type="email" placeholder="بريدك الإلكتروني" required />
+        <textarea placeholder="رسالتك" required></textarea>
+        <button type="submit">إرسال</button>
+      </form>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+      <p>© 2023 On Trend. جميع الحقوق محفوظة</p>
+    </footer>
+
+    <!-- زر عائم لعرض الطلبات -->
+    <button class="floating-cart-button" onclick="toggleCart()">
+      <i class="fa-solid fa-cart-shopping"></i>
+    </button>
+
+    <!-- قسم عرض الطلبات -->
+    <div id="cartSidebar" class="cart-sidebar">
+      <h2>الطلبات</h2>
+      <div id="cartItems" class="cart-items">
+        <!-- سيتم إضافة الطلبات هنا باستخدام JavaScript -->
+      </div>
+      <!-- إضافة زر إغلاق داخل قائمة الطلبات -->
+      <button class="close-btn" onclick="closeOrder()">إغلاق</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

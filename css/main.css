@@ -1,0 +1,81 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgba(253, 253, 253, 0) 10;
+  position: fixed; /* لجعلها عائمة */
+  top: 0; /* تثبيتها في أعلى الصفحة */
+  left: 0;
+  width: 100%; /* عرض كامل */
+  z-index: 1000; /* تأكد من أن الـ header يظهر فوق باقي المحتوى */
+}
+
+header h3 {
+  color: black; /* لجعل النص أبيض */
+  margin: 0;
+  font-size: 24px;
+}
+
+.text-header ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.text-header li {
+  margin-right: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.text-header li .icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons i {
+  margin-right: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.orders {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  margin-left: 5px;
+  color: white;
+}
+
+/* إضافة بعض المسافة في أعلى الصفحة لتجنب تداخل المحتوى مع الـ header العائم */
+body {
+  margin-top: 70px; /* يمكنك تعديل المسافة حسب ارتفاع الـ header */
+}
